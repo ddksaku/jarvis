@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="http://placehold.it/400x400" alt="" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>{{user.FirstName}} {{user.LastName}}</h4>                        
+                        <small>
+                        	{{user.CompanyName}}
+                        </small>
+                        <br />
+                        <p>
+                            <i class="glyphicon glyphicon-map-marker"></i>{{fullAddress}}		                        
+                        	<br />
+                            <i class="glyphicon glyphicon-envelope"></i>{{user.Email}}
+                            <br />                                                        
+                            <i class="glyphicon glyphicon-earphone"></i>{{user.Phone}}
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

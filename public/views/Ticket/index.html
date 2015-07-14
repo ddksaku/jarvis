@@ -1,0 +1,46 @@
+<header class="bar-title">
+  	<span class="title">Tickets</span>
+</header>
+
+<div class="xcrud-list-container">
+<table class="table table-striped">
+ 	<thead> 	
+ 		<tr class="row">
+			<th>SrServiceRecId</th>
+          	<th>Summary</th>          
+          	<th>Priority</th>          
+          	<th>TicketStatus</th>          
+          	<th>ContactName</th>          
+          	<th>ContactEmailAddress</th>          
+          	<th>EnteredDate</th>
+          	<th>LastUpdateDate</th>
+          	<th></th>
+        </tr>
+	</thead>
+	<tbody>
+        <tr class="row" ng-repeat="ticket in tickets">            
+            <td>{{ticket.srServiceRecId}}</td>
+            <td>{{ticket.summary}}</td>            
+            <td>{{ticket.priority}}</td>    
+            <td>{{ticket.ticketStatus}}</td>    
+            <td>{{ticket.contactName}}</td>    
+            <td>{{ticket.contactEmailAddress}}</td>    
+            <td>{{ticket.enteredDate}}</td>    
+            <td>{{ticket.lastUpdateDate}}</td>             
+        	<td class="xcrud-current xcrud-actions xcrud-fix xcrud-actions-fixed">
+        		<span class="btn-group">
+        			<a class="xcrud-action btn btn-info btn-sm" title="View" href="javascript:;" data-primary="103" data-task="view">
+        				<i class="glyphicon glyphicon-search"></i>
+    				</a>
+        			<a class="xcrud-action btn btn-warning btn-sm" title="Edit" href="javascript:;" data-primary="103" data-task="edit">
+        				<i class="glyphicon glyphicon-edit "></i>
+    				</a>
+        			<a class="xcrud-action btn btn-danger btn-sm" title="Remove" href="javascript:;" data-primary="103" data-task="remove" data-confirm="Do you really want remove this entry?">
+        				<i class="glyphicon glyphicon-remove"></i>
+        			</a>
+    			</span>
+			</td>
+        </tr>
+	</tbody>
+</table>
+</div>
